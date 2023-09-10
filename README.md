@@ -3,6 +3,8 @@
 This is a project to Develop an AI-driven software application that can efficiently interface with multiple data
 sources, allowing stakeholders to pose questions in natural language and derive valuable enrollment insights.
 
+BEFORE YOU PROCEED: [watch this](https://www.loom.com/share/d301db20229040b28e5c345f38d22800)
+
 It is a take-home interview for Roadz.
 
 # Table of Contents
@@ -14,7 +16,7 @@ It is a take-home interview for Roadz.
 3. [Data Preparation](#data-preparation)
 4. [Code Interpreters](#code-interpreters)
 5. [Importance of Wrappers](#importance-of-wrappers)
-6. [Possible Improvements](#possible-improvements)
+6. [Possible Improvements (with solutions)](#possible-improvements)
     1. [Loops](#loops)
     2. [Missing Nuances](#missing-nuances)
     3. [Returning Code](#returning-code)
@@ -24,7 +26,8 @@ It is a take-home interview for Roadz.
 # Summary
 
 This project utilizes the REACT framework to create an LLM system that allows users to query a files in natural
-language. It converts questions into pandas code and returns the results.
+language. It converts questions into pandas code and returns the results. Systems of this nature are called
+__"code interpreters"__ and are a very popular way to interface with LLMs.
 
 It runs using the [LangChain Framework](https://python.langchain.com/docs/get_started/introduction.html) specifically
 the [CSV Agent](https://python.langchain.com/docs/integrations/toolkits/csv).
@@ -154,7 +157,7 @@ Here is an example where the wrapper catches a mistake:
 1. the model mistakes all of CA with a single county
 2. the wrapper catches this mistake and returns a more useful answer
 
-# Possible Improvements
+# Possible Improvements (with solutions)
 
 This solution is a proof of concept. It is not meant to be a production ready solution. As such, there are many
 examples of where it could be improved. Here are a few and their solutions:
