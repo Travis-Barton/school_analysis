@@ -3,3 +3,5 @@ toml~=0.10.2
 langchain~=0.0.285
 streamlit~=1.26.0
 python-dotenv~=1.0.0
+openai
+tabulate
