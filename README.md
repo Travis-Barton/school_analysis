@@ -168,6 +168,7 @@ This solution is a proof of concept. It is not meant to be a production ready so
 examples of where it could be improved. Here are a few and their solutions:
 
 ## Loops
+
 ![loops](./data/photo_examples/Example of Loop.png "loops")
 
 Sometime the model gets stuck in a certain mindset. This can be devistating when that mindset involves sending information
@@ -216,6 +217,7 @@ measure and the other is a detailed measure. The model has a tendency to ignore 
 detailed measure.
 
 ![agg](./data/photo_examples/Example of agg.png "agg")
+
 Here:
 1. This should be a group by statement
 2. It coincidentally works because LA is HUGE
