@@ -5,7 +5,7 @@ sources, allowing stakeholders to pose questions in natural language and derive 
 
 BEFORE YOU PROCEED: [watch this](https://www.loom.com/share/d301db20229040b28e5c345f38d22800)
 
-It is a take-home interview for Roadz.
+It is a take-home interview for Roadz. See the final product here: [https://roadz-interview.streamlit.app/](https://roadz-interview.streamlit.app/)
 
 # Table of Contents
 
@@ -36,6 +36,9 @@ This a very vanilla implementation of the framework. It is meant to be a proof o
 [Possible Improvements](#possible-improvements) section for more details.
 
 # Running the Code
+
+You can see the final product deployed here: [https://roadz-interview.streamlit.app/](https://roadz-interview.streamlit.app/)
+or you can run it locally.
 
 ### Requirements
 in order to run this code you will need to run the following commands:
