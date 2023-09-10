@@ -5,7 +5,7 @@ sources, allowing stakeholders to pose questions in natural language and derive 
 
 BEFORE YOU PROCEED: [watch this](https://www.loom.com/share/d301db20229040b28e5c345f38d22800)
 
-It is a take-home interview for Roadz. See the final product here: [https://roadz-interview.streamlit.app/](https://roadz-interview.streamlit.app/)
+It is a take-home interview for Roadz.
 
 # Table of Contents
 
@@ -37,14 +37,16 @@ This a very vanilla implementation of the framework. It is meant to be a proof o
 
 # Running the Code
 
-You can see the final product deployed here: [https://roadz-interview.streamlit.app/](https://roadz-interview.streamlit.app/)
-or you can run it locally.
-
 ### Requirements
 in order to run this code you will need to run the following commands:
 ```
 pip install -r requirements.txt
 ```
+Then create a file called `.env` in the root directory and add the following:
+```
+OPENAI_API_KEY=<your openai key>
+```
+
 ### Running the Code
 The app is built on the wonderful Streamlit framework. To run it, simply run the following command:
 ```
