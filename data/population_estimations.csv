@@ -1,0 +1,60 @@
+County,Geoid,State_Name,Best_Population_Year,Population_Estimate
+California (the state as a whole),0400000US06,California,2022,39029342
+Alameda County,0500000US06001,California,2022,1628997
+Alpine County,0500000US06003,California,2022,1190
+Amador County,0500000US06005,California,2022,41412
+Butte County,0500000US06007,California,2022,207303
+Calaveras County,0500000US06009,California,2022,46563
+Colusa County,0500000US06011,California,2022,21914
+Contra Costa County,0500000US06013,California,2022,1156966
+Del Norte County,0500000US06015,California,2022,27082
+El Dorado County,0500000US06017,California,2022,192646
+Fresno County,0500000US06019,California,2022,1015190
+Glenn County,0500000US06021,California,2022,28339
+Humboldt County,0500000US06023,California,2022,135010
+Imperial County,0500000US06025,California,2022,178713
+Inyo County,0500000US06027,California,2022,18718
+Kern County,0500000US06029,California,2022,916108
+Kings County,0500000US06031,California,2022,152981
+Lake County,0500000US06033,California,2022,68191
+Lassen County,0500000US06035,California,2022,29904
+Los Angeles County,0500000US06037,California,2022,9721138
+Madera County,0500000US06039,California,2022,160256
+Marin County,0500000US06041,California,2022,256018
+Mariposa County,0500000US06043,California,2022,17020
+Mendocino County,0500000US06045,California,2022,89783
+Merced County,0500000US06047,California,2022,290014
+Modoc County,0500000US06049,California,2022,8511
+Mono County,0500000US06051,California,2022,12978
+Monterey County,0500000US06053,California,2022,432858
+Napa County,0500000US06055,California,2022,134300
+Nevada County,0500000US06057,California,2022,102293
+Orange County,0500000US06059,California,2022,3151184
+Placer County,0500000US06061,California,2022,417772
+Plumas County,0500000US06063,California,2022,19351
+Riverside County,0500000US06065,California,2022,2473902
+Sacramento County,0500000US06067,California,2022,1584169
+San Benito County,0500000US06069,California,2022,67579
+San Bernardino County,0500000US06071,California,2022,2193656
+San Diego County,0500000US06073,California,2022,3276208
+San Francisco County,0500000US06075,California,2022,808437
+San Joaquin County,0500000US06077,California,2022,793229
+San Luis Obispo County,0500000US06079,California,2022,282013
+San Mateo County,0500000US06081,California,2022,729181
+Santa Barbara County,0500000US06083,California,2022,443837
+Santa Clara County,0500000US06085,California,2022,1870945
+Santa Cruz County,0500000US06087,California,2022,264370
+Shasta County,0500000US06089,California,2022,180930
+Sierra County,0500000US06091,California,2022,3217
+Siskiyou County,0500000US06093,California,2022,43660
+Solano County,0500000US06095,California,2022,448747
+Sonoma County,0500000US06097,California,2022,482650
+Stanislaus County,0500000US06099,California,2022,551275
+Sutter County,0500000US06101,California,2022,98503
+Tehama County,0500000US06103,California,2022,65245
+Trinity County,0500000US06105,California,2022,15781
+Tulare County,0500000US06107,California,2022,477544
+Tuolumne County,0500000US06109,California,2022,54531
+Ventura County,0500000US06111,California,2022,832605
+Yolo County,0500000US06113,California,2022,222115
+Yuba County,0500000US06115,California,2022,84310
