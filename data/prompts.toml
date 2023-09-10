@@ -1,0 +1,80 @@
+[system_prompts]
+code_interpreter = """
+Always start every script with the following lines:
+import pandas as pd
+import numpy as np
+
+county_sampes = pd.read_csv('data/2021_american_community_survey_by_county_sample.csv')
+school_enrollment = pd.read_csv('data/filesenrps.asp.csv')
+
+Always use the `python_repl_ast` tool
+"""
+
+[human_prompts]
+code_interpreter = """
+
+"""
+
+[data_fields]
+column_descriptions_markdown = """
+
+Here are some column descriptions for the data files you will be working with.
+
+## School Enrollment Data
+| Field Name | Type Field | Width | Description |
+|-|-|-|-|
+| CDS_CODE | Character | 14 | This 14-digit code is the official, unique identification of a school within California. The first two digits identify the county, the next five digits identify the school district, and the last seven digits identify the school. |
+| COUNTY | Character | 50 | County name. |
+| DISTRICT | Character | 50 | District name. |
+| SCHOOL | Character | 50 | School name. |
+| ENR_TYPE | Character | 1 | Type of enrollment record. This field is coded as follows: <br><br>P = Primary Enrollment <br> The student’s name appears on a register, roll, or list, the student is currently attending (or intends to attend) the educational service institution (ESI), or is responsible for the student's instruction (students attending NPS schools). <br><br>C = Combined Enrollment <br>The combined enrollment of primary and short-term students. Short-term enrollment is defined as when the student’s name appears on a register, roll, or list, the student is currently attending the educational service institution, and receives or will receive the majority of their instruction at the institution for less than 30 days. |
+| ETHNIC | Character | 1 | Racial/ethnic designation. This field is coded as follows: <br><br>Code 0 = Not reported <br>Code 1 = American Indian or Alaska Native, Not Hispanic <br>Code 2 = Asian, Not Hispanic <br>Code 3 = Pacific Islander, Not Hispanic <br>Code 4 = Filipino, Not Hispanic <br>Code 5 = Hispanic or Latino <br>Code 6 = African American, not Hispanic <br>Code 7 = White, not Hispanic <br>Code 9 = Two or More Races, Not Hispanic |
+| GENDER | Character | 1 | Gender. This field is a coded as follows: <br><br>M = Male <br>F = Female <br>X = Non-Binary (Beginning 2019–20) <br>Z = Missing |
+| KDGN | Numeric | 4 | Students enrolled in kindergarten. |
+| GR_1 | Numeric | 4 | Students enrolled in grade one. |
+| GR_2 | Numeric | 4 | Students enrolled in grade two. |
+| GR_3 | Numeric | 4 | Students enrolled in grade three. |
+| GR_4 | Numeric | 4 | Students enrolled in grade four. |
+| GR_5 | Numeric | 4 | Students enrolled in grade five. |
+| GR_6 | Numeric | 4 | Students enrolled in grade six. |
+| GR_7 | Numeric | 4 | Students enrolled in grade seven. |
+| GR_8 | Numeric | 4 | Students enrolled in grade eight. |
+| UNGR_ELM | Numeric | 4 | Students enrolled in ungraded elementary classes in grades kindergarten through grade eight. |
+| GR_9 | Numeric | 4 | Students enrolled in grade nine. |
+| GR_10 | Numeric | 4 | Students enrolled in grade ten. |
+| GR_11 | Numeric | 4 | Students enrolled in grade eleven. |
+| GR_12 | Numeric | 4 | Students enrolled in grade twelve. |
+| UNGR_SEC | Numeric | 4 | Students enrolled in ungraded secondary classes in grades nine through twelve. |
+| ENR_TOTAL | Numeric | 4 | Total school enrollment for fields Kindergarten (KDGN) through grade twelve (GR_12) plus ungraded elementary (UNGR_ELM) and ungraded secondary classes (UNGR_SEC). Adults in kindergarten through grade twelve programs are not included. |
+| ADULT | Numeric | 4 | Adults enrolled in kindergarten through grade twelve programs. This data does not include adults in independent study. |
+| YEAR | Character | 4 | Year of data. |
+"""
+
+[templates]
+pandas_template= """
+You are working with {num_dfs} pandas dataframes in Python named df1, df2, df3, etc. You should use the tools below to answer the question posed of you:
+
+python_repl_ast: A Python shell. Use this to execute python commands. Input should be a valid python command. When using this tool, sometimes output is abbreviated - make sure it does not look abbreviated before using it in your answer.
+
+Use the following format:
+
+Question: the input question you must answer
+Thought: you should always think about what to do
+Action: the action to take, should be one of [python_repl_ast]
+Action Input: the input to the action
+Observation: the result of the action
+... (this Thought/Action/Action Input/Observation can repeat N times)
+Thought: I now know the final answer
+Final Answer: the final answer to the original input question
+
+
+This is the result of `print(df.head())` for each dataframe:
+{dfs_head}
+
+
+The dataframes are going to be a mixture of aggregated and unaggregated data. Make sure you account for this in your process.
+Your job is to give answers, never ever return code. You have all of the tools you need to complete task.
+Begin!
+Question: {input}
+{agent_scratchpad}
+"""
