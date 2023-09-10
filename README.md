@@ -157,7 +157,7 @@ it is important to have a wrapper that can catch these mistakes and return a mor
 
 Here is an example where the wrapper catches a mistake:
 
-![wrapper](./data/photo_examples/example of wrapping.png "wrapper")
+![./data/photo_examples/example of wrapping.png "wrapper"](https://github.com/Travis-Barton/school_analysis/blob/master/data/photo_examples/example%20of%20wrapping.png)
 
 1. the model mistakes all of CA with a single county
 2. the wrapper catches this mistake and returns a more useful answer
@@ -169,7 +169,7 @@ examples of where it could be improved. Here are a few and their solutions:
 
 ## Loops
 
-![loops](./data/photo_examples/Example of Loop.png "loops")
+![data/photo_examples/Example of Loop.png](https://github.com/Travis-Barton/school_analysis/blob/master/data/photo_examples/Example%20of%20Loop.png)
 
 Sometime the model gets stuck in a certain mindset. This can be devistating when that mindset involves sending information
 (no one wants 1,000 emails sent when 1 was intended) but for analysis tasks like these the concern is less severe. However,
@@ -197,7 +197,7 @@ The solution is to:
 
 I dont want to give it _only_ negative feedback, so here is an example of where it does a good job:
 
-![good](./data/photo_examples/Example of solid reasoning.png "good")
+![data/photo_examples/Example of solid reasoning.png "good"](https://github.com/Travis-Barton/school_analysis/blob/master/data/photo_examples/Example%20of%20solid%20reasoning.png)
 
 
 ## Returning Code
@@ -205,7 +205,7 @@ I dont want to give it _only_ negative feedback, so here is an example of where 
 This is a big one. The model will often return code, but it doesn't execute it. Its a super common, but highly annoying
 pattern in LLMs.
 
-![code](./data/photo_examples/Example of Code.png "code")
+![code](https://github.com/Travis-Barton/school_analysis/blob/master/data/photo_examples/Example%20of%20Code.png)
 
 The solution is to have a wrapper that can catch this and tell the LLM a very specific error message
 detailing why its not a good answer.
@@ -216,7 +216,7 @@ This a specific problem to this dataset (though it will be common in similar cas
 measure and the other is a detailed measure. The model has a tendency to ignore the fact that it needs to aggregate the
 detailed measure.
 
-![agg](./data/photo_examples/Example of agg.png "agg")
+![data/photo_examples/Example of agg.png "agg"](https://github.com/Travis-Barton/school_analysis/blob/master/data/photo_examples/Example%20of%20agg.png)
 
 Here:
 1. This should be a group by statement
