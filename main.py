@@ -4,6 +4,7 @@ from utils.llm_tools import SchoolLLM
 import dotenv
 
 dotenv.load_dotenv()
+
 st_callback = StreamlitCallbackHandler(st.container())
 with st.sidebar:
     # agent_type = st.selectbox("Agent Type", ["csv", "pandas"])
@@ -13,7 +14,7 @@ suggested_questions = [
     "How many students enrolled for Biology this year?",
     "What is the median population of counties?",
     "What is the most common age group of students?",
-    "What County has the most students who's families each 150k or more? ",
+    "What County has the most students who's families each earn 150k or more? ",
     "What county has the most 12th grade students?",
     "What county has the most 12th grade students by ratio to the population?"
 ]
